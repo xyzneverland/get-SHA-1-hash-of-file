@@ -2,6 +2,7 @@
 #by xyzneverland
 import hashlib
 import os
+import time
 
 def read_file(file_name, encoding="utf-8"):
   with open(file_name, "r", encoding=encoding) as f:
@@ -20,3 +21,4 @@ sha1.update(file_contents_encoded)
 file_hash = sha1.hexdigest()
 
 print(f"The SHA-1 hash of the file '{file_name}' is: {file_hash}")
+time.sleep(10)
