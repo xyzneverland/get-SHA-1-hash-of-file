@@ -1,5 +1,10 @@
 # get-SHA-1-hash-of-file
-How-To
+The purpose: 
+Of this script is to check if a file exists, read the contents of the file, and then calculate and print the SHA-1 hash of the file. The script asks the user to enter the file name, and then searches for the file using the os module. If the file is found, the script reads the contents of the file and calculates the SHA-1 hash of the file. The script then prints the SHA-1 hash of the file and waits for 10 seconds before closing the window.
+
+This script is useful for verifying the integrity of a file. The SHA-1 hash of a file is a unique identifier that can be used to check if the contents of the file have been modified or corrupted in any way. By calculating the SHA-1 hash of the file and comparing it to a known good hash, you can be sure that the file has not been tampered with.
+
+How-To:
 To use this script, you will need to have the Python interpreter installed on your computer. You can download and install the Python interpreter from the official Python website https://www.python.org/downloads/
 
 Once you have the Python interpreter installed, you can run the script by opening a terminal or command prompt, navigating to the directory where the script is located, and then running the following command:
@@ -11,6 +16,7 @@ This will start the Python interpreter and run the script. The script will then 
 It's important to note that the script will only be able to find the file if the file is located in the same directory as the script. This means that you will need to make sure that both the script and the file you want to check are in the same directory before running the script.
 
 How does it work?
+
 The script starts by importing the hashlib, os, and time modules. The hashlib module is used to calculate the SHA-1 hash of the file, the os module is used to search for the file, and the time module is used to pause the script for a specified number of seconds before closing the window.
 
 Next, the script defines the read_file() function, which is used to read the contents of the file. This function takes the file_name and encoding parameters, which are used to specify the file to read and the character set to use when decoding the file contents, respectively. The function opens the file in read-only mode and specifies the encoding parameter as the character set to use when decoding the file contents. The function then reads the contents of the file and returns them as a string.
