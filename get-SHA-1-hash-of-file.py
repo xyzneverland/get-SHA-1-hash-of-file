@@ -1,4 +1,5 @@
-#SHA-1 hash of the file v1.0
+#!/usr/bin/python3
+#SHA-1 hash of the file v1.1
 #by xyzneverland
 import hashlib
 import os
